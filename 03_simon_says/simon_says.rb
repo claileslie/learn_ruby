@@ -15,5 +15,12 @@ def start_of_word(phrase, num)
   "#{phrase.slice(0..new_num)}"
 end
 
+def first_word(phrase)
+  new_phrase = phrase.split(" ")
+  return new_phrase[0]
+
+end
 
 # puts start_of_word("claire", 2)
+
+puts first_word("hello world")
