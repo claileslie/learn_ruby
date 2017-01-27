@@ -18,9 +18,21 @@ end
 def first_word(phrase)
   new_phrase = phrase.split(" ")
   return new_phrase[0]
+end
 
+def titleize(phrase)
+  poop = phrase.split
+  poop.each do |word|
+    if word == "and"
+      word.downcase!
+    else
+      word.capitalize!
+    end
+  end
+  poop.join(" ")
 end
 
 # puts start_of_word("claire", 2)
 
-puts first_word("hello world")
+
+puts titleize("war and peace")
